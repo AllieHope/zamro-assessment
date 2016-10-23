@@ -1,0 +1,178 @@
+@basic-blue: #0050ca;
+@highlight-blue: #005ae0;
+@basic-grey: #eaeaea;
+@highlight-grey: #f2f2f2;
+@desktop-button-height: 45px;
+@mobile-button-height: 55px;
+
+.button{
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 35px; 
+    -moz-border-radius: 35px; 
+    -webkit-border-radius: 35px; 
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/* styles for mobile devices */
+@media (max-width: 768px) {
+    .cancel {
+        font-size: 16pt;
+        height: @mobile-button-height;
+        width: 200px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        background-color: #fff;
+        border: 2px solid @basic-blue;
+        color: @basic-blue;
+        -webkit-tap-highlight-color: @highlight-blue;
+    }
+    
+    .cancel:focus {
+        color: @highlight-blue;
+    }
+
+    .ex-cancel {
+        color: @basic-blue;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        padding-left: 10px;
+    }
+
+    .small {
+        font-size: 13pt;
+        height: @desktop-button-height;
+        width:100px;
+        padding: 10px 20px;
+    }
+
+    .blue {
+        color: #fff;
+        border: none;
+        background-color: @basic-blue;
+        -webkit-tap-highlight-color: @highlight-blue;
+    }
+    
+    .blue:focus {
+        background-color: @highlight-blue;
+    }
+
+    .grey {
+        color: @basic-blue;
+        border: none;
+        background-color: @basic-grey;
+        -webkit-tap-highlight-color: @highlight-grey;
+    }
+
+    .grey:focus {
+        background-color: @highlight-grey;
+    }
+    
+    .ex-grey {
+        color: @basic-blue;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        padding-right: 10px;
+    }
+
+    .simple {
+        font-size: 15pt;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        -webkit-tap-highlight-color: @highlight-blue
+    }
+    
+    .simple:focus {
+        color: @highlight-blue;
+    }
+
+    .icon {
+        height: 20px;
+        width: 20px;
+        vertical-align: middle;
+        padding-right: 4px;
+    }
+}
+/* end styles for mobile */
+
+/* styles for desktop */
+@media (min-width: 768px) {
+    .cancel {
+        font-size: 13pt;
+        height: @desktop-button-height;
+        width: 200px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        background-color: #fff;
+        border: 2px solid @basic-blue;
+    }
+
+    .cancel:hover, .simple:hover {
+        color: @highlight-blue;
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari */
+        transform: rotate(90deg);
+    }
+
+    .ex-cancel {
+        color: @basic-blue;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        padding-left: 10px;
+    }
+
+    .small {
+        font-size: 13pt;
+        height: @desktop-button-height;
+        width:100px;
+        padding: 10px 20px;
+    }
+
+    .blue {
+        color: #fff;
+        border: none;
+        background-color: @basic-blue;
+    }
+    
+    .blue:hover {
+        background-color: @highlight-blue;
+    }
+
+    .grey {
+        color: @basic-blue;
+        border: none;
+        background-color: @basic-grey;
+    }
+
+    .grey:hover {
+        color: @highlight-blue;
+        background-color: @highlight-grey;
+    }
+    
+    .ex-grey {
+        color: @basic-blue;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        padding-right: 10px;
+    }
+
+    .simple {
+        font-size: 13pt;
+        color: @basic-blue;
+        background-color: #fff;
+        border: none;
+    }
+
+    .icon {
+        height: 20px;
+        width: 20px;
+        vertical-align: middle;
+        padding-right: 4px;
+    }
+}
+/* end styles for desktop */
